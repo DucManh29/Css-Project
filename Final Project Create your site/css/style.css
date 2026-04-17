@@ -1,0 +1,96 @@
+/* ===== RESET ===== */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* ===== SKIP LINK ===== */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: black;
+    color: white;
+    padding: 8px;
+    z-index: 100;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+/* ===== NAV ===== */
+.nav-flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #333;
+    padding: 10px;
+}
+
+.nav-flex li {
+    list-style: none;
+}
+
+.nav-flex a {
+    color: white;
+    text-decoration: none;
+}
+
+/* ===== HOVER ===== */
+.nav-flex a:hover {
+    color: yellow;
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+/* ===== IMAGE (box model) ===== */
+img {
+    border: 3px solid black;
+    padding: 5px;
+    border-radius: 10px;
+    display: block;          /* fix ảnh bị lệch dòng */
+}
+
+/* ===== GRID ===== */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    padding: 20px;
+}
+
+/* ảnh trong grid */
+.grid img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* ===== FLEX ===== */
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+}
+
+/* ảnh trong flex */
+.flex img {
+    width: 180px;
+    height: 140px;
+    object-fit: cover;
+}
+
+/* ===== nth-child ===== */
+.flex img:nth-child(even) {
+    border-radius: 50%;
+}
+
+main img {
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    margin: 20px auto;
+}
